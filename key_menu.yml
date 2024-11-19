@@ -1,0 +1,82 @@
+menu_settings:
+  title: "&6Key Shop"
+  rows: 3
+  open_command: "keymenu"
+  open_requirement:
+    requirements:
+      - "player_command:keymenu"
+
+items:
+  10: # Posisi Cornez Key
+    material: TRIPWIRE_HOOK
+    name: "&aCornez Key"
+    lore:
+      - "&7Harga: &6700000"
+      - "&eKlik untuk membeli!"
+    click_commands:
+      - "[require_money:700000]"
+      - "[take_money:700000]"
+      - "[console] crates key give %player% cornez 1"
+    commands_on_fail:
+      - '[player] msg %player% &cUang kamu tidak cukup untuk membeli Cornez Key!'
+
+  12: # Posisi Elemental Key
+    material: TRIPWIRE_HOOK
+    name: "&bElemental Key"
+    lore:
+      - "&7Harga: &6800000"
+      - "&eKlik untuk membeli!"
+    click_commands:
+      - "[require_money:800000]"
+      - "[take_money:800000]"
+      - "[console] crates key give %player% elemental 1"
+    commands_on_fail:
+      - '[player] msg %player% &cUang kamu tidak cukup untuk membeli Elemental Key!'
+
+  14: # Posisi Bluxter Key
+    material: TRIPWIRE_HOOK
+    name: "&9Bluxter Key"
+    lore:
+      - "&7Harga: &6900000"
+      - "&eKlik untuk membeli!"
+    click_commands:
+      - "[require_money:900000]"
+      - "[take_money:900000]"
+      - "[console] crates key give %player% bluxter 1"
+    commands_on_fail:
+      - '[player] msg %player% &cUang kamu tidak cukup untuk membeli Bluxter Key!'
+
+  16: # Posisi Grandline Key
+    material: TRIPWIRE_HOOK
+    name: "&6Grandline Key"
+    lore:
+      - "&7Harga: &62000000"
+      - "&eKlik untuk membeli!"
+    click_commands:
+      - "[require_money:2000000]"
+      - "[take_money:2000000]"
+      - "[console] crates key give %player% grandline 1"
+    commands_on_fail:
+      - '[player] msg %player% &cUang kamu tidak cukup untuk membeli Grandline Key!'
+
+  20: # Posisi Legendary Key
+    material: TRIPWIRE_HOOK
+    name: "&dLegendary Key"
+    lore:
+      - "&7Harga: &610000000"
+      - "&eKlik untuk membeli!"
+    click_commands:
+      - "[require_money:10000000]"
+      - "[take_money:10000000]"
+      - "[console] crates key give %player% legendary 1"
+    commands_on_fail:
+      - '[player] msg %player% &cUang kamu tidak cukup untuk membeli Legendary Key!'
+
+  24: # Posisi Hiken Key (tanpa biaya)
+    material: TRIPWIRE_HOOK
+    name: "&cHiken Key"
+    lore:
+      - "&7Gratis!"
+      - "&eKlik untuk menerima!"
+    click_commands:
+      - "[console] crates key give %player% hiken 1"

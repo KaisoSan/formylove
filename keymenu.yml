@@ -1,0 +1,64 @@
+menu_title: '&8Role Menu'
+open_command: rlmenu
+size: 18
+items:
+  'background_head':
+    material: BLACK_STAINED_GLASS_PANE
+    display_name: ' &r '
+    priority: 1
+    slots:
+    - 0-18
+  'cornez':
+    material: TRIPWIRE_HOOK
+    display_name: ' &6&lCORNEZ KEY'
+    priority: 1
+    slot: 2
+    lore:
+    - ''
+    - '&3 Harga Key : 700.000'
+    - '&3Klik Kanan untuk Membeli -->'
+    - ''
+    right_click_requirement:
+      requirements:
+        anything_here:
+          type: has money
+          amount: 700000
+          deny_commands:
+          - '[message] &6Key Shop &8> &3Kamu butuh uang 700.000'
+    click_commands:
+    - '[close]'
+    - '[console]crates key give %player_name% cornez 1'
+  'elemantal':
+   material: TRIPWIRE_HOOK
+   display_name: ' &5&lELEMENTAL CRATE'
+   priority: 1
+   slot: 4
+   lore:
+   - ''
+   - '&3 Harga Key : 800.000'
+   - '&3Klik Kanan untuk Membeli -->'
+   - ''
+   right_click_requirement:
+      requirements:
+        anything_here:
+          type: has money
+          amount: 800000
+          deny_commands:
+          - '[message] &6Key Shop &8> &3Kamu butuh uang 800.000'
+  'bluxter':
+   material: TRIPWIRE_HOOK
+   display_name: ' &9&lBLUXTER CRATE'
+   priority: 1
+   slot: 6
+   lore: 
+   - ''
+   - '&3 Harga Key : 900.000'
+   - '&3Klik Kanan untuk Membeli'
+   - ''
+   right_click_requirement:
+      requirements:
+        anything_here:
+          type: has money
+          amount: 900000
+          deny_commands
+   
