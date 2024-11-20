@@ -1,2 +1,2 @@
 # ForMyLove
-Link: https://github.com/KaisoSan/formylove.git
+Link: https://kaisosan.github.io/formylove/
